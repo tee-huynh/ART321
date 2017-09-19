@@ -30,6 +30,16 @@ h3 {
   text-align: center; 
 }
 
+h4 { 
+  color: #30332E; 
+  font-family: 'Trocchi', sans-serif; 
+  font-size: 80px; 
+  font-weight: 300; 
+  line-height: 58px;
+  letter-spacing: 16px;
+  text-align: center; 
+}
+
 
 p { 
   color: #6852f06; 
@@ -58,4 +68,5 @@ a {
 a:hover {
   background: #ffcad4; /*sets background colour*/
   color : #ffff;
+  font-size: 24px;
 }
