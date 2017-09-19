@@ -19,6 +19,17 @@ h2 {
   text-align: center; 
 }
 
+h3 { 
+  color: #30332E; 
+  font-family: 'Courier New', sans-serif; 
+  font-size: 30px; 
+  font-weight: 300; 
+  line-height: 40px; 
+  margin: 0 0 30px; 
+  letter-spacing: 5px;
+  text-align: center; 
+}
+
 
 p { 
   color: #6852f06; 
