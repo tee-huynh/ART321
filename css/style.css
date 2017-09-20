@@ -60,7 +60,7 @@ a {
   display: inline-block;
   height: 50px; /*sets height of element*/
   background: #FFFBFC; /*sets the background of this element (here a solid colour)*/
-  transition: all 0.8s; /*sets a transition (for hover effect)*/
+  transition: all 0.4s; /*sets a transition (for hover effect)*/
   padding-left: 30px; /*sets 'padding'*/
   padding-right: 30px; /*sets 'padding'*/
   line-height: 50px; /*for this, it sets vertical alignment*/
