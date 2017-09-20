@@ -66,6 +66,10 @@ a {
   line-height: 50px; /*for this, it sets vertical alignment*/
 }
 a:hover {
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 14px; 
+  text-decoration : none; 
+  letter-spacing: 2px;
   background: #ffcad4; /*sets background colour*/
   color : #ffff;
   font-size: 24px;
