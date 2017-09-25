@@ -1,0 +1,120 @@
+/* GLOBAL STYLES */
+#titleh {
+  background: #040303;
+  padding-top: 4em;
+  display: flex;
+  justify-content: center;
+}
+
+/* Tutorial: https://css-tricks.com/snippets/css/typewriter-effect/; */
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #26E255;
+  font-family: 'Courier New', sans-serif; 
+  font-size: 80px;
+  font-weight: 300; 
+  line-height: 58px;
+  letter-spacing: 8px;
+  text-align: left;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .09em solid #fff; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .16em; /* Adjust as needed */
+  animation: 
+    typing 3.0s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff }
+}
+
+#colorstrip{
+    width: 100%; height: 150px;
+    border-color: black;
+    background-color: black;
+}
+
+h2 { 
+  color: white; 
+  font-family: 'Trocchi', sans-serif; 
+  font-size: 14px; 
+  font-weight: 200; 
+  line-height: 30px; 
+  margin: 0 0 30px; 
+  letter-spacing: 6px;
+  text-align: center; 
+}
+
+h3 { 
+  color: #30332E; 
+  font-family: 'Trocchi', sans-serif; 
+  font-size: 30px; 
+  font-weight: 300; 
+  line-height: 40px; 
+  margin: 0 0 30px; 
+  letter-spacing: 5px;
+  text-align: center; 
+}
+
+h4 { 
+  color: #30332E; 
+  font-family: 'Trocchi', sans-serif; 
+  font-size: 80px; 
+  font-weight: 300; 
+  line-height: 58px;
+  letter-spacing: 16px;
+  text-align: center; 
+}
+
+p{ 
+  color: white; 
+  font-family: 'Courier New', sans-serif; 
+  font-size: 14px;
+  line-height: 24px; 
+  letter-spacing: 6px;
+  margin: 0 0 24px; text-align: center; 
+  text-justify: center; 
+  justify-content: center;
+  display: block;
+  margin-left: 20em;
+  margin-right: 20em;
+}
+
+#corner{
+  margin-right: 5em;
+}
+
+.button1 {
+  font-family: 'Courier New', sans-serif;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  padding: 25px 25px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #FBF5EF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 7px #999;
+}
+
+.button1:hover {background-color: #F7F2E0}
+
+.button1:active {
+  background-color: #F7F2E0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

@@ -1,0 +1,76 @@
+h1 { 
+  color: #30332E; 
+  font-family: 'Trocchi', sans-serif; 
+  font-size: 124px; 
+  font-weight: 300; 
+  line-height: 58px;
+  letter-spacing: 16px;
+  text-align: center; 
+}
+
+h2 { 
+  color: #D1BCE3; 
+  font-family: 'Trocchi', sans-serif; 
+  font-size: 30px; 
+  font-weight: 300; 
+  line-height: 40px; 
+  margin: 0 0 30px; 
+  letter-spacing: 10px;
+  text-align: center; 
+}
+
+h3 { 
+  color: #30332E; 
+  font-family: 'Courier New', sans-serif; 
+  font-size: 30px; 
+  font-weight: 300; 
+  line-height: 40px; 
+  margin: 0 0 30px; 
+  letter-spacing: 5px;
+  text-align: center; 
+}
+
+h4 { 
+  color: #30332E; 
+  font-family: 'Trocchi', sans-serif; 
+  font-size: 80px; 
+  font-weight: 300; 
+  line-height: 58px;
+  letter-spacing: 16px;
+  text-align: center; 
+}
+
+
+p { 
+  color: #6852f06; 
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 14px;
+  line-height: 24px; 
+  letter-spacing: 2px;
+  margin: 0 0 24px; text-align: justify; 
+  text-justify: inter-word; 
+}
+
+a {
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 14px; 
+  text-decoration : none; 
+  letter-spacing: 2px;
+  color : #30332E;
+  display: inline-block;
+  height: 50px; /*sets height of element*/
+  background: #FFFBFC; /*sets the background of this element (here a solid colour)*/
+  transition: all 0.4s; /*sets a transition (for hover effect)*/
+  padding-left: 30px; /*sets 'padding'*/
+  padding-right: 30px; /*sets 'padding'*/
+  line-height: 50px; /*for this, it sets vertical alignment*/
+}
+a:hover {
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 14px; 
+  text-decoration : none; 
+  letter-spacing: 2px;
+  background: #ffcad4; /*sets background colour*/
+  color : #ffff;
+  font-size: 24px;
+}
