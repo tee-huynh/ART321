@@ -40,6 +40,17 @@ h4 {
   text-align: center; 
 }
 
+h5 { 
+  color: #30332E; 
+  font-family: 'Courier New', sans-serif; 
+  font-weight: 300; 
+  line-height: 30px; 
+  margin: 0 0 30px; 
+  letter-spacing: 3px;
+  text-align: justify; 
+  padding-left: 10em;
+  padding-right: 10em;
+}
 
 p { 
   color: #6852f06; 
