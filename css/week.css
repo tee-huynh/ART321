@@ -22,14 +22,12 @@ h2 {
 h3 { 
   color: #30332E; 
   font-family: 'Courier New', sans-serif; 
-  font-size: 18px; 
+  font-size: 14px; 
   font-weight: 300; 
-  line-height: 28px; 
+  line-height: 40px; 
   margin: 0 0 30px; 
   letter-spacing: 3px;
   text-align: center; 
-  margin-left: 2em;
-  margin-right: 2em;
 }
 
 h4 { 
@@ -42,6 +40,17 @@ h4 {
   text-align: center; 
 }
 
+h5 { 
+  color: #30332E; 
+  font-family: 'Courier New', sans-serif; 
+  font-weight: 300; 
+  line-height: 25px; 
+  margin: 0 0 30px; 
+  letter-spacing: 3px;
+  text-align: justify; 
+  padding-left: 10em;
+  padding-right: 10em;
+}
 
 p { 
   color: #6852f06; 
@@ -55,7 +64,7 @@ p {
 
 a {
   font-family: 'Helvetica Neue', sans-serif; 
-  font-size: 14px; 
+  font-size: 10px; 
   text-decoration : none; 
   letter-spacing: 2px;
   color : #30332E;
@@ -74,5 +83,5 @@ a:hover {
   letter-spacing: 2px;
   background: #ffcad4; /*sets background colour*/
   color : #ffff;
-  font-size: 24px;
+  font-size: 16px;
 }
