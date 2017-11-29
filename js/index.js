@@ -252,6 +252,184 @@ TweenMax.to('p', 0.5, {
   ease: Sine.easeIn
 });
 
-$('.door').click(function(){
-  $('.door').toggleClass('doorOpen');
+
+$(document).ready(function(){
+  //Take your div into one js variable
+  var div = $("#divToShowHide");
+  //Take the current position (vertical position from top) of your div in the variable
+  var pos = div.position();
+  //Now when scroll event trigger do following
+  $(window).scroll(function () {
+   var windowpos = $(window).scrollTop();
+   //Now if you scroll more than 100 pixels vertically change the class to AfterScroll
+   // I am taking 100px scroll, you can take whatever you need
+   if (windowpos >= (pos.top - 100)) {
+     div.addClass("AfterScroll");
+   }
+   //If scroll is less than 100px, remove the class AfterScroll so that your content will be hidden again 
+   else {
+     s.removeClass("AfterScroll");
+   }
+   //Note: If you want the content should be shown always once you scroll and do not want to hide it again when go to top agian, no need to write the else part
+ });
 });
+
+$('balloon balloon0').click(function() {
+    $('.balloon balloon0').hide();
+});
+
+$('balloon1').click(function() {
+    $('.balloon1').hide();
+});
+
+$('balloon2').click(function() {
+    $('.balloon2').hide();
+});
+
+$('balloon3').click(function() {
+    $('.balloon3').hide();
+});
+$('balloon4').click(function() {
+    $('.balloon4').hide();
+});
+
+$('balloon5').click(function() {
+    document.getElementById("balloon5").style.visibility = "hidden";
+});
+
+$('balloon6').click(function() {
+    document.getElementById("balloon6").style.visibility = "hidden";
+});
+
+$('balloon7').click(function() {
+    document.getElementById("balloon7").style.visibility = "hidden";
+});
+
+$('balloon8').click(function() {
+    document.getElementById("balloon8").style.visibility = "hidden";
+});
+$('balloon9').click(function() {
+    document.getElementById("balloon9").style.visibility = "hidden";
+});
+
+
+var audio = $("#simbaa")[0];
+$("simba").mouseenter(function() {
+  audio.play();
+
+});
+
+$('#simba').mouseover(function() {
+   $("#simba").play('simba.wav');
+});
+
+'use strict';
+
+function popBubble(bubble) {
+  bubble.classList.add('popped-bubble');
+}
+
+function createBubble() {
+  var size = Math.floor(Math.random() * 100);
+  var position = Math.floor(Math.random() * (window.innerWidth - size * 1.5));
+  var bubble = document.createElement('div');
+  bubble.className = 'bubble';
+  bubble.style.height = size + 'px';
+  bubble.style.width = size + 'px';
+  bubble.style.left = position + 'px';
+  bubble.style.bottom = '-2350px';
+
+  var bubbleShinySize = size / 5;
+  var bubbleShiny = document.createElement('div');
+  bubbleShiny.className = 'bubble-shiny';
+  bubbleShiny.style.height = bubbleShinySize + 'px';
+  bubbleShiny.style.width = bubbleShinySize + 'px';
+
+  bubble.appendChild(bubbleShiny);
+  bubble.addEventListener('click', function () {
+    return popBubble(bubble);
+  });
+  return bubble;
+}
+
+function animateBubble(bubble) {
+  var interval = setInterval(function () {
+    var bottomPos = parseInt(bubble.style.bottom);
+
+    if (bottomPos > -1700) {
+      bubble.parentNode.removeChild(bubble);
+      clearInterval(interval);
+    } else {
+      bubble.style.bottom = bottomPos + 1 + 'px';
+    }
+  }, Math.floor(Math.random() * 10) - 10);
+}
+
+function spawnBubbles() {
+  setInterval(function () {
+    var bubble = createBubble();
+    document.querySelector('main').appendChild(bubble);
+    animateBubble(bubble);
+  }, 1000);
+}
+
+spawnBubbles();
+
+var hoverArea = document.getElementById('simbapic');
+  var audio = document.getElementById('audio');
+  hoverArea.onmouseover= function(){
+    audio.play();
+  }
+  hoverArea.onmouseout= function(){
+    audio.pause();
+  }  
+
+var
+  words = ["We keep moving forward, opening new doors, and doing new things, because we're curious and curiosity keeps leading us down new paths."],
+  part,
+  i = 0,
+  offset = 0,
+  len = words.length,
+  forwards = true,
+  skip_count = 0,
+  skip_delay = 5,
+  speed = 50;
+
+var wordflick = function(){
+  setInterval(function(){
+      if (forwards) {
+        if(offset >= words[i].length){
+          ++skip_count;
+          if (skip_count == skip_delay) {
+            forwards = false;
+            skip_count = 0;
+          }
+        }
+      }
+      else {
+         if(offset == 0){
+            forwards = true;
+            i++;
+            offset = 0;
+            if(i >= len){
+              i=0;
+            } 
+         }
+      }
+      part = words[i].substr(0, offset);
+      if (skip_count == 0) {
+        if (forwards) {
+          offset++;
+        }
+        else {
+          offset--;
+        }
+      }
+      $('.word').text(part);
+  },speed);
+};
+
+$(document).ready(function(){
+  wordflick();
+});
+
